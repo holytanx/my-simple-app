@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My App</title>
+</head>
+<body>
+  <div>
+    <table>
+      <thead>
+        <th>Id</th>
+        <th>User Id</th>
+        <th>title</th>
+        <th>Body</th>
+      </thead>
+      <tbody>
+        <% for(let i=0; i< data.length; i++) { %>
+          <tr>
+            <td><%= data[i].id %></td>
+            <td><%= data[i].userId %></td>
+            <td><%= data[i].title %></td>
+            <td><%= data[i].body %></td>
+          </tr>
+          <% } %>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
